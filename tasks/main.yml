@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.10.16
+- hosts: 192.168.10.17
   become: yes
   tasks:
   - name: Update
@@ -8,6 +8,7 @@
   - include_tasks: apache2.yml
   - include_tasks: Mariadb.yml
   - include_tasks: php.yml
+  - include_tasks: mysql_test.yml
   - include_tasks: mysql_secure_installation.yml
   - include_tasks: create_database.yml
   - include_tasks: composer.yml
