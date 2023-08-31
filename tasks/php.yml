@@ -2,7 +2,7 @@
   - name: PHP
     apt: name=software-properties-common
 
-  - name: Add co-installable PHP 7.2
+  - name: Add co-installable PHP 7.4
     apt_repository: 
      repo: 'ppa:ondrej/php'
 
